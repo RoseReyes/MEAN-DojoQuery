@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="DojoQuery.js">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $Dojo(document).ready(function(){
+            $Dojo("#btn").click(function(){
+                alert("You clicked me!");
+            });
+            $Dojo("#btn").hover(function() {
+                $Dojo("body").append("<p> You clicked me!</p>");
+            });
+        });
+    </script>
+</body>
+    <button id ="btn">Click Me</button>
+</html>
